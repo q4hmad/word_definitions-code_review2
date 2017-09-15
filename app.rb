@@ -9,12 +9,12 @@ get('/') do
   erb(:input)
 end
 
-post('/output') do
+post('/') do
  @word1 = params['word1']
  @word2 = params['word2']
  @word3 = params['word3']
  @words = Word.new(:word1=> @word1, :word2=> @word2, :word3=> @word3)
  @words.save
  @input = Word.all()
- erb(:output)
+ erb(:input)
 end

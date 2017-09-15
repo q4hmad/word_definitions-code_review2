@@ -6,9 +6,10 @@ class Word
    attr_accessor(:word1, :word2, :word3)
 
      def initialize(attributes)
-       @word_1 = attributes.fetch(:word_1)
-       @word_2 = attributes.fetch(:word_2)
-       @word_3 = attributes.fetch(:word_3)
+       @word_1 = attributes.fetch(:word1)
+       @word_2 = attributes.fetch(:word2)
+       @word_3 = attributes.fetch(:word3)
+       @id = @@words.length + 1
      end
 
      def self.all()
