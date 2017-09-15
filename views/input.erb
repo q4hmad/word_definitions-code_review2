@@ -1,0 +1,32 @@
+<h2>Define your favorite words yourself!</h2>
+<br>
+<br>
+
+<% @input.each do |input| %>
+  <p><%= input.word1 %></p>
+  <p><%= input.word2 %></p>
+  <p><%= input.word2 %></p>
+<% end  %>
+
+<h4>Enter some words you would like to define!</h4>
+
+<br>
+
+<form action="/" method="post">
+
+  <div class="form-group">
+      <label for='word1'>Enter the first word here:</label>
+      <input name="word1" class="form-control" type="text">
+  </div>
+
+  <div class="form-group">
+      <label for='word1'>Enter a second word here:</label>
+      <input name="word1" class="form-control" type="text">
+  </div>
+
+  <div class="form-group">
+    <label for="first_name">Enter a third word here:</label>
+    <input name="first_name" class="form-control" type="text">
+  </div>
+  <button type="submit" class="btn-success">Add the word!</button>
+  </form>
