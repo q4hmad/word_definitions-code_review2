@@ -1,5 +1,5 @@
-<h2>Hello Word</h2>
 
-<% @word_array.each do |word| %>
-  <h4><a href="/word/<%= word.id() %>"><%= word.word %></a></h4>
-<% end %>
+<%=@definition %>
+
+<p>This is the word: <%= @definition.word %></p>
+<p>This is the Definition you made for that word:<%= @definition.word_definition%></p>

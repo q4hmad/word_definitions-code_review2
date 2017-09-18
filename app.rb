@@ -19,6 +19,7 @@ post('/list') do
 end
 
 get('/words/:id') do
-  @word_array = Word.find(params[:id])
-  erb(:definition)
+  @definition = Word.find(params[:id])
+  puts @definition.word_definition
+  erb(:results_page)
 end
