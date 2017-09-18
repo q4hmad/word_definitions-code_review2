@@ -1,35 +1,34 @@
 class Word
 
-   @@words = []
+   @@word_array = []
 
    attr_reader :id
-   attr_accessor(:word1, :word2, :word3)
+   attr_accessor :word, :word_definition
 
      def initialize(attributes)
-       @word1 = attributes.fetch(:word1)
-       @word2 = attributes.fetch(:word2)
-       @word3 = attributes.fetch(:word3)
-       @id = @@words.length + 1
+       @word = attributes.fetch('word')
+       @word_definition = attributes.fetch('word_definition')
+       @id = @@word_array.length + 1
      end
 
      def self.all()
-       @@words
+       @@word_array
      end
 
-     def save()
-       @@words.push(self)
+     def push_word()
+       @@word_array.push(self)
      end
 
      def self.clear()
-       @@words = []
+       @@word_array = []
      end
 
     def self.find(id)
       word_id = id.to_i
-      @@words.each do (word)
-        if word.id = word_id
+      @@word_array.each do (word)
+        if word.id == word_id
           return word
         end
+      end
     end
-  end
 end
