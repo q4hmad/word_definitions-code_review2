@@ -13,20 +13,21 @@ describe('Word') do
   end
 end
 
-  describe('#save') do
+  describe('#push_word') do
     it('saves an item to an array') do
-      word = Word.new({:word=> 'bunny', :word_definition=> "ears"})
-      word.save()
-      expect(Word.all()).to(eq([word]))
+      word1 = Word.new({"word"=> "bunny", "word_definition"=> "ears"})
+      word1.push_word()
+      word2 = Word.new({"word"=> "bear", "word_definition"=> "growly animal"})
+      word2.push_word()
+      expect(Word.all()).to(eq([word1, word2]))
     end
   end
 
-  describe("clear") do
-    it("clears all items from the list") do
-      word = Word.new({:word=> "bunny", :word_definition=> "ears"})
-      word.save
-      Word.clear(
-        expect(Word.all()).to(eq([])))
+  describe(".find") do
+    it("finds an item based on its id") do
+      word1 = Word.new({"word"=> "bear", "word_definition"=> "growly animal"})
+      word1.push_word()
+      expect(Word.find(1)).to(eq(word1))
     end
   end
 end

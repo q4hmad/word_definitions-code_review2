@@ -1,0 +1,5 @@
+<h2>Hello Word</h2>
+
+<% @word_array.each do |word| %>
+  <h4><a href="/word/<%= word.id() %>"><%= word.word %></a></h4>
+<% end %>

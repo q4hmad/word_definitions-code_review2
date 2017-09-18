@@ -17,3 +17,8 @@ post('/list') do
   @word_array = Word.all()
   erb(:definition)
 end
+
+get('/words/:id') do
+  @word_array = Word.find(params[:id])
+  erb(:definition)
+end

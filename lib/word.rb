@@ -24,8 +24,8 @@ class Word
      end
 
     def self.find(id)
-      word_id = id.to_i
-      @@word_array.each do (word)
+      word_id = id.to_i()
+      @@word_array.each do |word|
         if word.id == word_id
           return word
         end
