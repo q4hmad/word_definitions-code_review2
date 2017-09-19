@@ -5,21 +5,21 @@ require('./lib/word')
 require('pry')
 
 get('/') do
+  @word_array = Word.all()
   erb(:input)
 end
 
-post('/list') do
+post('/') do
   word = params["word"]
   word_definition = params["word_definition"]
-  word_with_definition = {"word" => word, "word_definition" => word_definition}
+  word_with_definition = ({"word" => word, "word_definition" => word_definition})
   defined_word = Word.new(word_with_definition)
-  defined_word.push_word
+  defined_word.push_word()
   @word_array = Word.all()
   erb(:definition)
 end
 
-get('/words/:id') do
-  @definition = Word.find(params[:id])
-  puts @definition.word_definition
+get('/:id') do
+  @word_array = Word.find(params[:id])
   erb(:results_page)
 end

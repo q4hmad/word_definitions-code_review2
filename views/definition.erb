@@ -1,6 +1,12 @@
-<h2>Definition page</h2>
 
-<% @word_array.each do |word| %>
-   <h3><a href="words/<%= word.id() %>"><%= word.word %></a></h3>
+<h2>Definition page</h2>
+<% @word_array.each do |item| %>
+<h3><a href="/:id<%= item.id %>"><%= item.word_definition %></a></h3>
+ <h3><a href="/:id<%= item.id %>"><%= item.word %></a></h3>
 <% end %>
-<%=@word_array.inspect%>
+
+<!-- <h2>Definition page</h2>
+<% @word_array.each do |item| %>
+<h3><a href="/:id<%= item.id %>"><%= item.word_definition %></a></h3>
+ <h3><a href="/:id<%= item.id %>"><%= item.word %></a></h3>
+<% end %> -->
