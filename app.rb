@@ -20,6 +20,11 @@ post('/') do
 end
 
 get('/:id') do
-  @word_array = Word.find(params[:id])
+  @item = Word.find(params[:id])
   erb(:results_page)
+end
+
+post('new_page/:id') do
+  new_def = params["new_def"]
+  new_definition =  new_def.add.def
 end

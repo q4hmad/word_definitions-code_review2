@@ -1,6 +1,13 @@
 
 <h3>Your definition is :</h3>
-<% @word_array.each do |item| %>
-<h3><a href="/:id<%= item.id %>"><%= item.word_definition %></a></h3>
- <h3><a href="/:id<%= item.id %>"><% item.word %></a></h3>
-<% end %>
+<h4><%= @item.word_definition %></h4>
+
+
+<h3>You can add another definition here!</h3>
+<form action="new_page/" method="post">
+  <div class="form-group">
+    <label for="new_def"></label>
+    <input id="new_def" name="new_def" class="form-control" type="text">
+  </div>
+  <button type="submit" class="btn">Add your new definition!</button>
+</form>
