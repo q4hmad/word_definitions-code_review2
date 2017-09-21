@@ -15,9 +15,13 @@ class Word
        @@word_array
      end
 
-     def push_word()
+     def save()
        @@word_array.push(self)
      end
+
+    # def add_def(new_def)
+    #   @word_definition.push(new_def)
+    # end
 
      def self.clear()
        @@word_array = []

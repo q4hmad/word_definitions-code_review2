@@ -14,7 +14,7 @@ post('/') do
   word_definition = params["word_definition"]
   word_with_definition = ({"word" => word, "word_definition" => word_definition})
   defined_word = Word.new(word_with_definition)
-  defined_word.push_word()
+  defined_word.save()
   @word_array = Word.all()
   erb(:definition)
 end

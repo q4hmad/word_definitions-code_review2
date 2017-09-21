@@ -1,2 +1,6 @@
 
 <h3>Your definition is :</h3>
+<% @word_array.each do |item| %>
+<h3><a href="/:id<%= item.id %>"><%= item.word_definition %></a></h3>
+ <h3><a href="/:id<%= item.id %>"><% item.word %></a></h3>
+<% end %>
