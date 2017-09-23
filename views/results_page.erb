@@ -1,13 +1,13 @@
 
-<h3>Your definition is :</h3>
-<h4><%= @item.word_definition %></h4>
+<h2>The definition of <%= @word.word %> :</h2>
+<%= @word.word_definition %></h3>
 
 
-<h3>You can add another definition here!</h3>
-<form action="new_page/" method="post">
-  <div class="form-group">
-    <label for="new_def"></label>
-    <input id="new_def" name="new_def" class="form-control" type="text">
-  </div>
-  <button type="submit" class="btn">Add your new definition!</button>
-</form>
+<!-- <h2>Enter another definition for the word here:</h2>
+
+<div class="form-group">
+    <label for='word'></label>
+    <input name="add_def" class="form-control" type="text">
+</div>
+<button type="submit" class="btn-success">Add your second definition here:</button>
+</form> -->

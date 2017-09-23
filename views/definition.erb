@@ -1,11 +1,5 @@
 
-<h2>Definition page</h2>
+<h2>The words you have defined are:</h2>
 <% @word_array.each do |item| %>
-<h3><a href="/<%= item.id %>"><% item.word_definition %></a></h3>
+<h3><a href="/words/<%= item.id %>"><%= item.word %></a></h3>
 <% end %>
-
-<!-- <h2>Definition page</h2>
-<% @word_array.each do |item| %>
-<h3><a href="/:id<%= item.id %>"><%= item.word_definition %></a></h3>
- <h3><a href="/:id<%= item.id %>"><%= item.word %></a></h3>
-<% end %> -->

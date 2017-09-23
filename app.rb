@@ -19,12 +19,14 @@ post('/') do
   erb(:definition)
 end
 
-get('/:id') do
-  @item = Word.find(params[:id])
+get('/words/:id') do
+  @word = Word.find(params[:id])
   erb(:results_page)
 end
 
-post('new_page/:id') do
-  new_def = params["new_def"]
-  new_definition =  new_def.add.def
-end
+# post('/words/:id') do
+#   add_def = params['add_def']
+#
+#  @word = Word.find(params[:id])
+# erb(:results_page)
+# end
