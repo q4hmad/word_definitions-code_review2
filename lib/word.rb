@@ -7,7 +7,7 @@ class Word
 
      def initialize(attributes)
        @word = attributes.fetch('word')
-       @word_definition = attributes.fetch('word_definition')
+       @word_definition = []
        @id = @@word_array.length + 1
      end
 
@@ -17,6 +17,14 @@ class Word
 
      def self.all()
        @@word_array
+     end
+
+     def add_definition(string)
+       @word_definition.push(string)
+     end
+
+     def all_definitions()
+       @word_definition
      end
 
      def save()

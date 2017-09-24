@@ -1,13 +1,11 @@
 
-<h2>The definition of <%= @word.word %> :</h2>
-<%= @word.word_definition %></h3>
+<h2>Write your definition of <%= @word.word %>  here:</h2>
 
 
-<!-- <h2>Enter another definition for the word here:</h2>
-
+<form action='/results/<%= @word.id %>' method="post">
 <div class="form-group">
-    <label for='word'></label>
-    <input name="add_def" class="form-control" type="text">
+    <label for='word_definition'></label>
+    <input name="word_definition" class="form-control" type="text">
 </div>
-<button type="submit" class="btn-success">Add your second definition here:</button>
-</form> -->
+<button type="submit" class="btn-success">Add your definition here:</button>
+</form>
