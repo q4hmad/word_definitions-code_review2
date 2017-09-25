@@ -11,11 +11,12 @@ end
 
 post('/') do
   word = params["word"]
-  word_definition = params[:id]
   word_with_definition = ({"word" => word})
   defined_word = Word.new(word_with_definition)
   defined_word.save()
   @word_array = Word.all()
+  word_definition = params['word_definition']
+  defined_word.add_definition(word_definition)
   erb(:input)
 end
 
