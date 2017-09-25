@@ -1,6 +1,9 @@
 
 <h2>Write your definition of <%= @word.word %>  here:</h2>
 
+<% @word.all_definitions.each do |item| %>
+  <h3><%= item %></h3>
+<% end %>
 
 <form action='/results/<%= @word.id %>' method="post">
 <div class="form-group">
