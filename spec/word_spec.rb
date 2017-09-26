@@ -43,11 +43,20 @@ describe('Word') do
      end
 
      describe(".clear") do
-       it("empties out the wrods from array") do
+       it("empties out the words from array") do
          word1 = Word.new({"word"=> "bear", "word_definition"=> "growly animal"})
          word1.save()
          Word.clear()
          expect(Word.all()).to(eq([]))
        end
      end
+
+     describe("#add_definition") do
+       it("adds input into definition array") do
+       word3_definition = Word.new({:word=> "rabbit", :word_definition=> @word_definition})
+       word3.add_definition("bunny")
+       word3.save
+       expect(word3_definition.word_definition()).to(eq(["bunny"]))
+     end
+   end
 end

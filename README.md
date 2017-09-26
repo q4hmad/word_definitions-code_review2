@@ -1,32 +1,36 @@
-Sphinx
 
-A project implementing Sinatra in ruby, 09.15.2017
+
+Word Definer
+
+An independent project implementing DBB and Sinatra in Ruby, 09.24.2017
 
 By Qudsia Ahmad
 
 Description
 
-Create a method that can take in a word and its definition. By clicking on a word, we should be able to reach another page with the definition which the user has inputted, along with any formatting, images, etc that we choose to add.
+A simple learning website for kids that allows them to input a list of words they don't know (but would like to learn) and then come up with their own definitions for them.
 
 Specs
 
 Description	Input	Output
-Test 1: Test to make sure all the basic methods are working: .all(), #save(), etc..
-Test riddle 2:
-Test riddle 3:
-Setup/Installation Requirements
+Clears the array	Takes a word and a definition Links a word and first inputted definition and allows for additional definitions to be added.
 
-..
-Known Bugs
+$ git clone
 
-...
+$ cd word_definitions
+
+$ ruby app.rb
+
+Open http://localhost:4567/ in your favorite web browser.
+
+You can also try the app on heroku.
 
 Support and contact details
 
-If you have any updates or suggestions please contact Qudsia Ahmad or make a contribution to this repository.
+If you have any updates or suggestions please contact Qudsia Ahmad or make a contribution to my repository.
 
 License
 
 MIT License
 
-Copyright (c) 2017 Riki Montgomery, Qudsia Ahmad
+Copyright (c) 2017 Qudsia Ahmad
