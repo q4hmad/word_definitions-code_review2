@@ -53,10 +53,10 @@ describe('Word') do
 
      describe("#add_definition") do
        it("adds input into definition array") do
-       word3_definition = Word.new({:word=> "rabbit", :word_definition=> @word_definition})
-       word3.add_definition("bunny")
-       word3.save
-       expect(word3_definition.word_definition()).to(eq(["bunny"]))
+       word = Word.new({"word"=> "rabbit", "word_definition"=> "all ears"})
+       word.save
+       expect(word.add_definition("all ears")).to(eq(["all ears"]))
+
      end
    end
 end
