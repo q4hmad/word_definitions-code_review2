@@ -28,7 +28,7 @@ $ ruby app.rb
 
 Open http://localhost:4567/ in your favorite web browser.
 
-You can also try the app on heroku at https://lit-island-34839.herokuapp.com/
+You can also try the app on [heroku](https://lit-island-34839.herokuapp.com/)
 
 Support and contact details
 
