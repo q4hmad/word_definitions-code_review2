@@ -32,7 +32,7 @@ You can also try the app on [heroku](https://lit-island-34839.herokuapp.com/)
 
 Support and contact details
 
-If you have any updates or suggestions please contact [q4hmaad](https://q4hmad@gmail.com) or make a contribution to my repository.
+If you have any updates or suggestions please contact [q4hmad](https://q4hmad@gmail.com) or make a contribution to my repository.
 
 License
 
