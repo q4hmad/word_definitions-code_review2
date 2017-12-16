@@ -1,19 +1,24 @@
 
 
-Word Definer
+# Word Definer
 
-An independent project implementing DBB and Sinatra in Ruby, 09.24.2017
+#### An independent project implementing DBB and Sinatra in Ruby, 09.24.2017
 
-By Qudsia Ahmad
+### By Qudsia Ahmad
 
-Description
+##### Description
 
-A simple learning website for kids that allows them to input a list of words they don't know (but would like to learn) and then come up with their own definitions for them.
+### A simple learning website for kids that allows them to input a list of words they don't know (but would like to learn) and then come up with their own definitions for them.
 
-Specs
+## Specs
 
-Description	Input	Output
-Clears the array	Takes a word and a definition Links a word and first inputted definition and allows for additional definitions to be added.
+### Description	
+
+  _Clears the array_
+  _Takes a word and a definition_
+  _Links a word and first inputted definition._
+  _allows for additional definitions to be added._
+
 
 $ git clone
 
