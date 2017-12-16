@@ -14,10 +14,10 @@
 
 ### Description	
 
-  _Clears the array_
-  _Takes a word and a definition_
-  _Links a word and first inputted definition._
-  _allows for additional definitions to be added._
+ *  _Clears the array_
+ * _Takes a word and a definition_
+ * _Links a word and first inputted definition._
+ * _allows for additional definitions to be added._
 
 
 $ git clone
@@ -32,7 +32,7 @@ You can also try the app on heroku at https://lit-island-34839.herokuapp.com/
 
 Support and contact details
 
-If you have any updates or suggestions please contact Qudsia Ahmad or make a contribution to my repository.
+If you have any updates or suggestions please contact [q4hmaad](https://q4hmad@gmail.com) or make a contribution to my repository.
 
 License
 
